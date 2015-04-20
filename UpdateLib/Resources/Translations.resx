@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Software_update" xml:space="preserve">
+    <value>Software Update</value>
+    <comment>Software Update</comment>
+  </data>
+  <data name="A_new_version_is_available" xml:space="preserve">
+    <value>A new version {0} is available!</value>
+    <comment>A new version {0} is available!</comment>
+  </data>
+  <data name="Update_is_now_available" xml:space="preserve">
+    <value>Update is available! You have version {0} installed. Would you download it now?</value>
+    <comment>Update is available! You have version {0} installed. Would you download it now?</comment>
+  </data>
+  <data name="Release_notes" xml:space="preserve">
+    <value>Release notes:</value>
+    <comment>Release notes:</comment>
+  </data>
+  <data name="Skip_This_Version" xml:space="preserve">
+    <value>Skip this version</value>
+    <comment>Skip this version</comment>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+    <comment>Update</comment>
+  </data>
+  <data name="Remind_Later" xml:space="preserve">
+    <value>Remind later</value>
+    <comment>Remind later</comment>
+  </data>
+  <data name="Downloading_update" xml:space="preserve">
+    <value>Downloading update ...</value>
+    <comment>Downloading update ...</comment>
+  </data>
+  <data name="Remind_me_later_to_update" xml:space="preserve">
+    <value>Remind me later to update</value>
+    <comment>Remind me later to update</comment>
+  </data>
+  <data name="Download_updates_later" xml:space="preserve">
+    <value>Do you want to download updates later?</value>
+    <comment>Do you want to download updates later?</comment>
+  </data>
+  <data name="Download_updates_now_description" xml:space="preserve">
+    <value>You should download updates now. This only takes few minutes depending on your internet connection and ensures you have latest version of the application.</value>
+    <comment>You should download updates now. This only takes few minutes depending on your internet connection and ensures you have latest version of the application.</comment>
+  </data>
+  <data name="Yes_Remind_Me_Later" xml:space="preserve">
+    <value>Yes, please remind me later : </value>
+    <comment>Yes, please remind me later :</comment>
+  </data>
+  <data name="No_Download_updates_now_recommended" xml:space="preserve">
+    <value>No, download updates now (recommended)</value>
+    <comment>No, download updates now (recommended)</comment>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+    <comment>OK</comment>
+  </data>
+  <data name="After_30_minutes" xml:space="preserve">
+    <value>After 30 minutes</value>
+    <comment>After 30 minutes</comment>
+  </data>
+  <data name="After_12_hours" xml:space="preserve">
+    <value>After 12 hours</value>
+    <comment>After 12 hours</comment>
+  </data>
+  <data name="After_1_day" xml:space="preserve">
+    <value>After 1 day</value>
+    <comment>After 1 day</comment>
+  </data>
+  <data name="After_2_days" xml:space="preserve">
+    <value>After 2 days</value>
+    <comment>After 2 days</comment>
+  </data>
+  <data name="After_4_days" xml:space="preserve">
+    <value>After 4 days</value>
+    <comment>After 4 days</comment>
+  </data>
+  <data name="After_8_days" xml:space="preserve">
+    <value>After 8 days</value>
+    <comment>After 8 days</comment>
+  </data>
+  <data name="After_10_days" xml:space="preserve">
+    <value>After 10 days</value>
+    <comment>After 10 days</comment>
+  </data>
+</root>
