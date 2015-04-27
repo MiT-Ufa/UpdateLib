@@ -6,6 +6,7 @@ using System.Net.Cache;
 using System.Reflection;
 using System.Threading;
 using System.Windows;
+using System.Windows.Threading;
 using System.Xml;
 using Microsoft.Win32;
 
@@ -136,14 +137,7 @@ namespace UpdateLib
 
                 if (CheckForUpdateEvent == null)
                 {
-                    var thread = new Thread(ShowUi);
-
-                    if (CurrentCulture != null)
-                    {
-                        thread.CurrentCulture = CurrentCulture;
-                    }
-
-                    thread.Start();
+                    ShowUi();
                 }
             }
 
@@ -212,8 +206,14 @@ namespace UpdateLib
 
         private static void ShowUi()
         {
-            var updateForm = new MainWindow();
-            updateForm.ShowDialog();
+            Application.Current.Dispatcher.Invoke(
+                DispatcherPriority.Normal,
+                new Action(
+                    () =>
+                    {
+                        var updateForm = new MainWindow(false);
+                        updateForm.ShowDialog();
+                    }));
         }
 
         private static T GetAttribute<T>(Assembly assembly)

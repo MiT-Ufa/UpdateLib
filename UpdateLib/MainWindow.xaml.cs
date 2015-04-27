@@ -24,22 +24,15 @@ namespace UpdateLib
             if (!remindLater)
             {
                 InitializeComponent();
-                var resources = new ComponentResourceManager(typeof (Translations));
                 Title = AutoUpdater.DialogTitle;
-                UpdateTextBlock.Text =
-                    string.Format(
-                        resources.GetString(
-                            Translations.A_new_version_is_available,
-                            CultureInfo.CurrentCulture),
-                        AutoUpdater.AppTitle);
+
+                var format = Translations.A_new_version_is_available;
+                UpdateTextBlock.Text = string.Format(format, AutoUpdater.AppTitle);
+
+
+                format = Translations.Update_is_now_available;
                 DescriptionTextBlock.Text =
-                    string.Format(
-                        resources.GetString(
-                            Translations.Update_is_now_available,
-                            CultureInfo.CurrentCulture),
-                        AutoUpdater.AppTitle,
-                        AutoUpdater.CurrentVersion,
-                        AutoUpdater.InstalledVersion);
+                    string.Format(format, AutoUpdater.InstalledVersion);
             }
         }
 
